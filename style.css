@@ -1,6 +1,46 @@
-body {
-    font-size: 48px;
-    color: white;
-    font-weight: 600;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    border-bottom: 2px solid #000000;
+    color: #000; /* Text color */
+    padding: 20px; /* Add some padding */
+    text-align: left; /* Center-align the text */
+}
+
+a{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.box_h1{
+    font-size: 36px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 70%; /* Make the container take up the full height of the viewport */
+}
+
+.box {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
 }
