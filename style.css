@@ -32,12 +32,19 @@ img{
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 70%; /* Make the container take up the full height of the viewport */
 }
 
 .box {
-    flex: 1;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    max-width: 30%;
+    order: 0;
     background-color: #f0f0f0;
     padding: 20px;
     margin: 10px;
