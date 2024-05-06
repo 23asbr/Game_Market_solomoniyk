@@ -8,10 +8,11 @@ if(itemsDiv){
     console.log('Поле id: ', itemsDiv.id)
     console.log('Поле clientWidth: ', itemsDiv.clientWidth)
     console.log('Поле innerHTML: ', itemsDiv.innerHTML)
-    itemsDiv.innerHTML = '<div class = item></div>'
-    itemsDiv.innerHTML += '<div class = item></div>'
-    itemsDiv.innerHTML += '<div class = item></div>'
-    itemsDiv.innerHTML += '<div class = item></div>'
+    for(let i=0; i<=100; i++){
+        itemsDiv.innerHTML = '<div class = item></div>'
+    }
+    
+    
 } else{
     console.log("not found")
 }
