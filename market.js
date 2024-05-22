@@ -6,50 +6,22 @@
 let itemsArray = [
 
     {
-        firstName: "Лариса",
-        lastName: "Забелло",
-        age: "65",
-        subject: "Англійська мова",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/zabello-larysa-oleksandrivna.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/zabello-l-o/"
+        title: "Царівна жаба",
+        author: "Деркач Єлизавета",
+        author_photo: "",
+        email: "23a_dyem@liceum.ztu.edu.ua",
+        group: "10-A 1",
+        image: "image/ldgame.png",
+        game_github: "https://github.com/liska228/Phaser2ndGame",
+        game_pages: "https://liska228.github.io/Phaser2ndGame/",
+        docs: "https://drive.google.com/drive/folders/1uFrc-z8MnRAFvR7sPNM1NnN800TJOUfr",
+        forms: "https://forms.gle/XDzvrjzJhjq758XFA",
+        gamemarket_github:"https://github.com/liska228/GameMarket_Derkach-",
+        gamemarket_pages: "https://liska228.github.io/GameMarket_Derkach-",
+        market_pages:"https://liska228.github.io/GameMarket_Derkach-/market.html",
+        stars: 5,
     },
-
-    {
-        firstName: "Василь",
-        lastName: "Бабій",
-        age: "95",
-        subject: "Фізична культура",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/babiy-vasyl-dmytrovych.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/babiy-vasyl-dmytrovych/"
-    },
-
-    {
-        firstName: "Іван",
-        lastName: "Севрук",
-        age: "56",
-        subject: "--",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/sevruk-ivan-hryhorovych.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/sevruk-i-h/"
-    },
-
-    {
-        firstName: "Олена",
-        lastName: "Геча",
-        age: "30",
-        subject: "Історія",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/hecha-olena-anatoliyivna.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/hecha-o-a/"
-    },
-
-    {
-        firstName: "Вікторія",
-        lastName: "Нелипович",
-        age: "19",
-        subject: "Математика",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/nelypovych-viktoriya-vitaliyivna.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/nelypovych-viktoriya-vitaliyivna/"
-    },
-
+    
 
 
     // 'Газоноосарка 43',
@@ -101,12 +73,21 @@ itemsArray.forEach((item,index)=>{
  itemsDiv.innerHTML += 
  `
         <div class="item">
-        <h2>Вчитель № ${index + 1} з ${itemsArray.length}</h2>
-        <p>${item.lastName} ${item.firstName}</p>
-        <p><img src="${item.photo}" alt="${item.lastName} ${item.firstName}" class="item-image"></p>
-        <p>Вік: ${item.age} </p>
-        <p>Предмет: ${item.subject} </p>
-        <p><a href="${item.url}" target ="_blank" >Перейти на сторінку</a></p>
+        <p>Назва гри: ${item.title}</p>
+        <img src="${item.image}" alt="" srcset="">
+        <p>Автор: ${item.author} </p>
+        <p>Група: ${item.group} </p>
+        <p>
+        <button href="${item.game_pages}" target ="_blank" >Грати</button>
+        <button href="${item.game_github}" target ="_blank" >Github</button>
+        <button href="${item.docs}" target ="_blank" >Docs</button>
+        </p>
+        <p>
+        <button href="${item.forms}" target ="_blank" >Forms</button>
+        <button href="${item.gamemarket_github}" target ="_blank" >Gamemarket Github</button>
+        <button href="${item.gamemarket_pages}" target ="_blank" >Gamemarket</button>
+        </p>
+        
     </div>
     `
 })
